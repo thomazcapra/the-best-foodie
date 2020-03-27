@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/the-best-foodie/static/css/main.5f361e03.chunk.css",
+    "main.js": "/the-best-foodie/static/js/main.239b3f83.chunk.js",
+    "main.js.map": "/the-best-foodie/static/js/main.239b3f83.chunk.js.map",
+    "runtime-main.js": "/the-best-foodie/static/js/runtime-main.493c1921.js",
+    "runtime-main.js.map": "/the-best-foodie/static/js/runtime-main.493c1921.js.map",
+    "static/js/2.4ef51d7d.chunk.js": "/the-best-foodie/static/js/2.4ef51d7d.chunk.js",
+    "static/js/2.4ef51d7d.chunk.js.map": "/the-best-foodie/static/js/2.4ef51d7d.chunk.js.map",
+    "index.html": "/the-best-foodie/index.html",
+    "precache-manifest.6c1d6d5b8a75d352c054bf588d4fc265.js": "/the-best-foodie/precache-manifest.6c1d6d5b8a75d352c054bf588d4fc265.js",
+    "service-worker.js": "/the-best-foodie/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/the-best-foodie/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.4ef51d7d.chunk.js.LICENSE.txt": "/the-best-foodie/static/js/2.4ef51d7d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/the-best-foodie/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.493c1921.js",
+    "static/js/2.4ef51d7d.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.239b3f83.chunk.js"
+  ]
+}
