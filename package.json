@@ -1,0 +1,41 @@
+{
+  "name": "the-best-foodie",
+  "version": "0.1.0",
+  "homepage": "http://thomazcapra.github.io/the-best-foodie",
+  "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "deploy": "react-scripts build && gh-pages -d build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^5.0.1",
+    "react": "^16.13.1",
+    "gh-pages": "^2.2.0",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.0.1",
+    "typescript": "~3.7.2"
+  }
+}
