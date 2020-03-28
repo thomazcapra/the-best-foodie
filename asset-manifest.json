@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/the-best-foodie/static/css/main.5f361e03.chunk.css",
-    "main.js": "/the-best-foodie/static/js/main.239b3f83.chunk.js",
-    "main.js.map": "/the-best-foodie/static/js/main.239b3f83.chunk.js.map",
+    "main.css": "/the-best-foodie/static/css/main.37f8a074.chunk.css",
+    "main.js": "/the-best-foodie/static/js/main.861b4f78.chunk.js",
+    "main.js.map": "/the-best-foodie/static/js/main.861b4f78.chunk.js.map",
     "runtime-main.js": "/the-best-foodie/static/js/runtime-main.493c1921.js",
     "runtime-main.js.map": "/the-best-foodie/static/js/runtime-main.493c1921.js.map",
-    "static/js/2.4ef51d7d.chunk.js": "/the-best-foodie/static/js/2.4ef51d7d.chunk.js",
-    "static/js/2.4ef51d7d.chunk.js.map": "/the-best-foodie/static/js/2.4ef51d7d.chunk.js.map",
+    "static/js/2.70872340.chunk.js": "/the-best-foodie/static/js/2.70872340.chunk.js",
+    "static/js/2.70872340.chunk.js.map": "/the-best-foodie/static/js/2.70872340.chunk.js.map",
     "index.html": "/the-best-foodie/index.html",
-    "precache-manifest.6c1d6d5b8a75d352c054bf588d4fc265.js": "/the-best-foodie/precache-manifest.6c1d6d5b8a75d352c054bf588d4fc265.js",
+    "precache-manifest.07e8b3bc227a23ac2b9c1e8171818ada.js": "/the-best-foodie/precache-manifest.07e8b3bc227a23ac2b9c1e8171818ada.js",
     "service-worker.js": "/the-best-foodie/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/the-best-foodie/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.4ef51d7d.chunk.js.LICENSE.txt": "/the-best-foodie/static/js/2.4ef51d7d.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/the-best-foodie/static/media/logo.5d5d9eef.svg"
+    "static/css/main.37f8a074.chunk.css.map": "/the-best-foodie/static/css/main.37f8a074.chunk.css.map",
+    "static/js/2.70872340.chunk.js.LICENSE.txt": "/the-best-foodie/static/js/2.70872340.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/the-best-foodie/static/media/DIN_Condensed_Bold.1be717be.ttf",
+    "static/media/background.png": "/the-best-foodie/static/media/background.c054d54f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.493c1921.js",
-    "static/js/2.4ef51d7d.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.239b3f83.chunk.js"
+    "static/js/2.70872340.chunk.js",
+    "static/css/main.37f8a074.chunk.css",
+    "static/js/main.861b4f78.chunk.js"
   ]
 }
