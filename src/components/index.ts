@@ -1,4 +1,5 @@
 export { Navbar } from './nav-bar';
 export { Section } from './section';
-export { Map } from './map';
+export { MapContainer } from './map';
 export { Footer } from './footer';
+export { RecipeCard } from './recipe-card';

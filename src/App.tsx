@@ -4,10 +4,9 @@ import { About, Community, Location, OurMenu, Recipes } from 'sections';
 import './App.css';
 
 class App extends Component {
-  dummyText = 'TEXT';
   render() {
     return (
-      <div className='App'>
+      <div className='app-root'>
         <Navbar />
 
         <About />

@@ -1,6 +1,14 @@
 :root {
   --off-white: #fafafa;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.app-root {
+  -ms-overflow-style: none;
+}
 .nav {
   background-color: var(--off-white);
   position: sticky;
