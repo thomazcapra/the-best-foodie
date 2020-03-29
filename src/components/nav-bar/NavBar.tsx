@@ -10,6 +10,7 @@ const StyledNavBar = styled.nav`
   font-size: 18px;
   font-family: 'DIN Condensed';
   color: #333333;
+  z-index: 2;
   position: fixed;
   display: flex;
   opacity: 1;
@@ -30,10 +31,10 @@ export class Navbar extends Component {
 
   render() {
     return (
-      <StyledNavBar id="navbar">
+      <StyledNavBar id='navbar'>
         <StyledLogo> LOGO </StyledLogo>
-        <div className="nav-content">
-          <ul className="nav-items">
+        <div className='nav-content'>
+          <ul className='nav-items'>
             {[
               SectionsData.about,
               SectionsData.community,
@@ -42,9 +43,9 @@ export class Navbar extends Component {
               SectionsData.recipes
             ].map(section => {
               return (
-                <li className="nav-item" key={section.id}>
+                <li className='nav-item' key={section.id}>
                   <Link
-                    activeClass="active"
+                    activeClass='active'
                     to={section.id}
                     spy={true}
                     smooth={true}

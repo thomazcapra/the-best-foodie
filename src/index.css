@@ -135,6 +135,13 @@ table {
   src: url('./assets/fonts/DIN_Condensed_Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'GillSans';
+  font-style: regular;
+  font-weight: 400;
+  src: url('./assets/fonts/GillSans.ttc') format('truetype');
+}
+
 body {
   margin: 0;
   font-family: 'DIN Condensed', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',

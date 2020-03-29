@@ -97,24 +97,31 @@ export class MapContainer extends React.Component {
     const map = new google.maps.Map(this.divRef.current!, {
       zoom: 14,
       styles: mapStyles,
-      center: new google.maps.LatLng(40.72, -74)
+      disableDefaultUI: true, // a way to quickly hide all controls
+      scaleControl: true,
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.RIGHT_BOTTOM
+      },
+      center: new google.maps.LatLng(51.510365, -0.157709)
     });
 
     const markerIcon = {
       path:
-        'M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z',
-      fillColor: '#e25a00',
+        'M20.844,0h0C9.387,0,0,10.348,0,21.509v.074c.37,7.17,3.991,14.192,8.131,21.361s8.8,14.709,11.6,22.692a1.516,1.516,0,0,0,1.922.961,1.464,1.464,0,0,0,1.035-1.035c2.439-8.278,7.022-15.818,11.161-23.061s7.835-13.97,7.909-21.066h0C41.762,10.348,32.375,0,20.844,0Zm0,36.218A14.783,14.783,0,1,1,35.627,21.435,14.779,14.779,0,0,1,20.844,36.218Z',
+      fillColor: '#333',
       fillOpacity: 0.95,
-      scale: 3,
+      scale: 1,
       strokeColor: '#fff',
-      strokeWeight: 3,
-      anchor: new google.maps.Point(12, 24)
+      strokeWeight: 1,
+      anchor: new google.maps.Point(51.513012, -0.127607)
     };
 
     const marker = new google.maps.Marker({
       map: map,
       icon: markerIcon,
-      position: new google.maps.LatLng(40.72, -74)
+      position: new google.maps.LatLng(51.513012, -0.127607)
     });
 
     const info = new SnazzyInfoWindow({
@@ -127,11 +134,10 @@ export class MapContainer extends React.Component {
   render(): JSX.Element {
     return (
       <React.Fragment>
-        <h1>Map Component</h1>
         <div
           ref={this.divRef}
           style={{
-            height: '100%',
+            height: '500px',
             width: '100%'
           }}
         />
