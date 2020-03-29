@@ -1,4 +1,4 @@
-import { Navbar } from 'components';
+import { Footer, Navbar } from 'components';
 import React, { Component } from 'react';
 import { About, Community, Location, OurMenu, Recipes } from 'sections';
 import './App.css';
@@ -15,6 +15,8 @@ class App extends Component {
         <Location />
         <OurMenu />
         <Recipes />
+
+        <Footer />
       </div>
     );
   }

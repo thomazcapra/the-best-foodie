@@ -55,6 +55,7 @@ const LocationTitle = (): JSX.Element => {
 export const Location = (): JSX.Element => (
   <Section
     id={SectionsData.location.id}
+    height={'500px'}
     content={
       <React.Fragment>
         <Map />
