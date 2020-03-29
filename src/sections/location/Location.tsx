@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section } from 'components';
+import { Section, Map } from 'components';
 import { SectionsData } from 'sections/sections.models';
 
 export const Location = (): JSX.Element => (
@@ -7,5 +7,10 @@ export const Location = (): JSX.Element => (
     title={SectionsData.location.title}
     subtitle={'CONTENT'}
     id={SectionsData.location.id}
+    content={
+      <React.Fragment>
+        <Map />
+      </React.Fragment>
+    }
   />
 );

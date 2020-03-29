@@ -13,13 +13,14 @@ const StyledNavBar = styled.nav`
   position: fixed;
   display: flex;
   opacity: 1;
-  padding: 46px 27px 0 35px;
+  padding: 22px 28px 0 35px;
+  width: 100%;
 `;
 
 const StyledLogo = styled.div`
   font-family: 'DIN Condensed';
   font-size: 28px;
-  margin-left: 35px;
+  margin-rig
 `;
 
 export class Navbar extends Component {
@@ -29,10 +30,10 @@ export class Navbar extends Component {
 
   render() {
     return (
-      <StyledNavBar id='navbar'>
+      <StyledNavBar id="navbar">
         <StyledLogo> LOGO </StyledLogo>
-        <div className='nav-content'>
-          <ul className='nav-items'>
+        <div className="nav-content">
+          <ul className="nav-items">
             {[
               SectionsData.about,
               SectionsData.community,
@@ -41,13 +42,12 @@ export class Navbar extends Component {
               SectionsData.recipes
             ].map(section => {
               return (
-                <li className='nav-item' key={section.id}>
+                <li className="nav-item" key={section.id}>
                   <Link
-                    activeClass='active'
+                    activeClass="active"
                     to={section.id}
                     spy={true}
                     smooth={true}
-                    duration={500}
                   >
                     {section.title}
                   </Link>
