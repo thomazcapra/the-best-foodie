@@ -14,14 +14,23 @@ const StyledNavBar = styled.nav`
   position: fixed;
   display: flex;
   opacity: 1;
-  padding: 22px 28px 0 35px;
-  width: 100%;
+  padding-top: 22px;
+  display: flex;
+  width: 100vw;
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-right: 28px;
+    align-items: flex-end;
+  }
 `;
 
 const StyledLogo = styled.div`
   font-family: 'DIN Condensed';
   font-size: 28px;
-  margin-rig
+  margin-left: 35px;
 `;
 
 export class Navbar extends Component {
@@ -55,6 +64,15 @@ export class Navbar extends Component {
                 </li>
               );
             })}
+          </ul>
+          <ul className='nav-items'>
+            <li className='nav-item' key={'CONTACT'}>
+              CONTACT
+            </li>
+
+            <li className='nav-item' key={'LOGIN'}>
+              LOGIN
+            </li>
           </ul>
         </div>
       </StyledNavBar>
