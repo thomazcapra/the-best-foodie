@@ -61,6 +61,19 @@ export const RecipeCard = ({
             </div>
           </div>
 
+          <img
+            style={{
+              position: 'absolute',
+              bottom: '3px',
+              right: 0,
+              cursor: 'pointer',
+              width: '60px',
+              height: '60px'
+            }}
+            alt={'button' + logo}
+            src={recipesImages.goButton}
+          />
+
           {stamp && (
             <div
               style={{

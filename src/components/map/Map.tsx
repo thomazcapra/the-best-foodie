@@ -1,99 +1,11 @@
 import React from 'react';
 import SnazzyInfoWindow from 'snazzy-info-window';
-
-const mapStyles: google.maps.MapTypeStyle[] = [
-  {
-    featureType: 'all',
-    elementType: 'geometry.fill',
-    stylers: [
-      {
-        lightness: -100
-      },
-      {
-        color: '#ffdac9'
-      }
-    ]
-  },
-  {
-    featureType: 'poi',
-    elementType: 'geometry.fill',
-    stylers: [
-      {
-        visibility: 'on'
-      },
-      {
-        color: '#ffcab1'
-      }
-    ]
-  },
-  {
-    featureType: 'poi',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off'
-      }
-    ]
-  },
-  {
-    featureType: 'poi.park',
-    elementType: 'geometry.fill',
-    stylers: [
-      {
-        color: '#ffcab1'
-      }
-    ]
-  },
-  {
-    featureType: 'road',
-    elementType: 'geometry',
-    stylers: [
-      {
-        lightness: 100
-      },
-      {
-        visibility: 'simplified'
-      }
-    ]
-  },
-  {
-    featureType: 'road',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off'
-      }
-    ]
-  },
-  {
-    featureType: 'transit.line',
-    elementType: 'geometry',
-    stylers: [
-      {
-        visibility: 'on'
-      },
-      {
-        lightness: 700
-      }
-    ]
-  },
-  {
-    featureType: 'water',
-    elementType: 'all',
-    stylers: [
-      {
-        color: '#92e1dd'
-      }
-    ]
-  }
-];
+import { mapStyles } from './Maps.styles';
 
 export class MapContainer extends React.Component {
   private divRef = React.createRef<HTMLDivElement>();
 
   componentDidMount(): void {
-    console.log(google.maps);
-
     const map = new google.maps.Map(this.divRef.current!, {
       zoom: 14,
       styles: mapStyles,
@@ -147,6 +59,3 @@ export class MapContainer extends React.Component {
 }
 
 export default MapContainer;
-// export default GoogleApiWrapper({
-//   apiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY ?? 'NOT_FOUND'
-// })(MapContainer);
