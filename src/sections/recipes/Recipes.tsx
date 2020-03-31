@@ -1,11 +1,11 @@
-import React from 'react';
-import { Section, RecipeCard } from 'components';
-import { SectionsData } from 'sections/sections.models';
-import { recipes } from './Recipes.data';
-import { Recipe } from 'shared/models';
 import { recipesImages } from 'assets/images/recipes';
+import { RecipeCard, Section } from 'components';
+import React from 'react';
 import { fromEvent } from 'rxjs';
 import { debounceTime, map } from 'rxjs/operators';
+import { SectionsData } from 'sections/sections.models';
+import { Recipe } from 'shared/models';
+import { recipes } from './Recipes.data';
 
 const horizontalMargin = 145;
 
@@ -116,22 +116,15 @@ const RecipesArrows = ({
         debounceTime(100),
         map((e: Event) => e.target as HTMLDivElement)
       )
-      .subscribe(
-        ({
-          scrollLeft,
-          scrollWidth,
-          offsetLeft,
-          offsetWidth
-        }: HTMLDivElement) => {
-          setConstrols(state => {
-            return {
-              ...state,
-              backDisabled: !scrollLeft,
-              nextDisabled: scrollLeft + offsetWidth === scrollWidth
-            };
-          });
-        }
-      );
+      .subscribe(({ scrollLeft, scrollWidth, offsetWidth }: HTMLDivElement) => {
+        setConstrols(state => {
+          return {
+            ...state,
+            backDisabled: !scrollLeft,
+            nextDisabled: scrollLeft + offsetWidth === scrollWidth
+          };
+        });
+      });
 
     return () => subs$.unsubscribe();
   }, [scrollableArea]);

@@ -54,3 +54,17 @@
   display: flex;
   flex-direction: column;
 }
+
+.seleted-section {
+  animation: grow 500ms ease-in;
+  width: 30px;
+}
+
+@keyframes grow {
+  from {
+    width: 15px;
+  }
+  to {
+    width: 30px;
+  }
+}
