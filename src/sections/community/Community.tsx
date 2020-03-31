@@ -3,6 +3,8 @@ import { Section, CommunityCard } from 'components';
 import { SectionsData } from 'sections/sections.models';
 import { Communities } from './Community.data';
 
+const Slide = require('react-reveal/Slide');
+
 const CommunityTitle = (): JSX.Element => (
   <div
     style={{
@@ -86,7 +88,8 @@ const CommunityCards = (): JSX.Element => (
       flexDirection: 'column'
     }}
   >
-    <div
+    <Slide
+      bottom
       style={{
         display: 'flex',
         border: '1px solid',
@@ -96,8 +99,9 @@ const CommunityCards = (): JSX.Element => (
       }}
     >
       <CommunityCard {...Communities[0]} />
-    </div>
-    <div
+    </Slide>
+    <Slide
+      bottom
       style={{
         display: 'flex',
         border: '1px solid',
@@ -107,8 +111,9 @@ const CommunityCards = (): JSX.Element => (
       }}
     >
       <CommunityCard {...Communities[1]} />
-    </div>
-    <div
+    </Slide>
+    <Slide
+      bottom
       style={{
         display: 'flex',
         border: '1px solid',
@@ -118,7 +123,7 @@ const CommunityCards = (): JSX.Element => (
       }}
     >
       <CommunityCard {...Communities[2]} />
-    </div>
+    </Slide>
   </div>
 );
 
