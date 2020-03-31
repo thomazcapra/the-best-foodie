@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75bafe528e39d65ff952e88a26fd1385",
+    "revision": "cf63dd76dda381a6a91beb1c405a520c",
     "url": "/the-best-foodie/index.html"
   },
   {
-    "revision": "e5661ff9ac9d40ca6dbf",
+    "revision": "010296c64ac5a4155a95",
     "url": "/the-best-foodie/static/css/main.d7296f3a.chunk.css"
   },
   {
-    "revision": "61b7632187e6a6993370",
-    "url": "/the-best-foodie/static/js/2.540edd5f.chunk.js"
+    "revision": "812b830a949adef6ae5e",
+    "url": "/the-best-foodie/static/js/2.20a4c4fe.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/the-best-foodie/static/js/2.540edd5f.chunk.js.LICENSE.txt"
+    "url": "/the-best-foodie/static/js/2.20a4c4fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5661ff9ac9d40ca6dbf",
-    "url": "/the-best-foodie/static/js/main.ffe7fb77.chunk.js"
+    "revision": "010296c64ac5a4155a95",
+    "url": "/the-best-foodie/static/js/main.3df7b74e.chunk.js"
   },
   {
     "revision": "650bd23842795e5d62b9",
