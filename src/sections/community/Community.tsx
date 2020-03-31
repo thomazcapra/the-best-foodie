@@ -1,6 +1,7 @@
 import React from 'react';
-import { Section } from 'components';
+import { Section, CommunityCard } from 'components';
 import { SectionsData } from 'sections/sections.models';
+import { Communities } from './Community.data';
 
 const CommunityTitle = (): JSX.Element => (
   <div
@@ -78,14 +79,57 @@ const CommunityTitle = (): JSX.Element => (
   </div>
 );
 
+const CommunityCards = (): JSX.Element => (
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column'
+    }}
+  >
+    <div
+      style={{
+        display: 'flex',
+        border: '1px solid',
+        height: '260px',
+        padding: '10px 146px',
+        marginTop: '16px'
+      }}
+    >
+      <CommunityCard {...Communities[0]} />
+    </div>
+    <div
+      style={{
+        display: 'flex',
+        border: '1px solid',
+        height: '260px',
+        padding: '10px 146px',
+        marginTop: '16px'
+      }}
+    >
+      <CommunityCard {...Communities[1]} />
+    </div>
+    <div
+      style={{
+        display: 'flex',
+        border: '1px solid',
+        height: '260px',
+        padding: '10px 146px',
+        marginTop: '16px'
+      }}
+    >
+      <CommunityCard {...Communities[2]} />
+    </div>
+  </div>
+);
+
 export const Community = (): JSX.Element => (
   <Section
     id={SectionsData.community.id}
+    height={'unset'}
     content={
       <React.Fragment>
-        <div>
-          <CommunityTitle />
-        </div>
+        <CommunityTitle />
+        <CommunityCards />
       </React.Fragment>
     }
   />

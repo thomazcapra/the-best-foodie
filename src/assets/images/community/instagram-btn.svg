@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="instagram-btn" transform="translate(1343 -1005)">
+    <rect id="Rectangle_902" data-name="Rectangle 902" width="60" height="60" transform="translate(-1343 1005)" fill="#ffdac9"/>
+    <g id="Group_42" data-name="Group 42" transform="translate(-34.908 2.092)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="7.087" cy="7.087" r="7.087" transform="translate(-1284.746 1025.389)" fill="none" stroke="#333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="1.089" cy="1.089" r="1.089" transform="translate(-1269.581 1022.829)" fill="none" stroke="#333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.6"/>
+      <rect id="Rectangle_879" data-name="Rectangle 879" width="30.681" height="30.681" rx="8" transform="translate(-1293 1017.135)" fill="none" stroke="#333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

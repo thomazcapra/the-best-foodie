@@ -7,3 +7,11 @@ export interface Recipe {
   logo: string;
   marginTop?: string;
 }
+
+export interface CommunityProps {
+  image: string;
+  title: string;
+  message: string;
+  comments: number;
+  hearts: number;
+}
