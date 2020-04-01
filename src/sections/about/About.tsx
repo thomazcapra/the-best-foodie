@@ -25,8 +25,8 @@ export const About = (): JSX.Element => (
             height: '100%',
             position: 'absolute',
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
+            justifyContent: 'center'
+            // alignItems: 'center'
           }}
         >
           <div
@@ -35,6 +35,7 @@ export const About = (): JSX.Element => (
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              marginTop: '320px',
               position: 'relative'
             }}
           >

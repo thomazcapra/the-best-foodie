@@ -97,7 +97,8 @@ const SectionNumbers = (): JSX.Element => {
           position: 'absolute',
           top: `${18 * currentSection}px`,
           left: 0,
-          fontSize: '18px'
+          fontSize: '18px',
+          transition: 'top 0.4s ease-in-out 0s'
         }}
       >
         {`0${currentSection + 1}`}
@@ -120,7 +121,7 @@ const SectionNumbers = (): JSX.Element => {
 class App extends Component {
   render() {
     return (
-      <div className='app-root' id='container-root'>
+      <div className="app-root" id="container-root">
         <Navbar />
 
         <RequestInfo />
