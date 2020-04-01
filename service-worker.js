@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/the-best-foodie/precache-manifest.1b4d9b808124236b3fbd8a64c48b36e6.js"
+  "/the-best-foodie/precache-manifest.29e0dc2e1e0ada5c606dadc71d9448b3.js"
 );
 
 self.addEventListener('message', (event) => {
