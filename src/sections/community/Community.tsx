@@ -1,6 +1,7 @@
 import { CommunityCard, Section } from 'components';
 import React from 'react';
 import { SectionsData } from 'sections/sections.models';
+import { documentScroll$ } from 'utils';
 import { Communities } from './Community.data';
 
 const CommunityTitle = (): JSX.Element => (
@@ -81,6 +82,55 @@ const CommunityTitle = (): JSX.Element => (
   </div>
 );
 
+const CommunityLine = ({
+  children,
+  reversed
+}: {
+  reversed?: boolean;
+  children: JSX.Element;
+}): JSX.Element => {
+  const ref = React.useRef<HTMLDivElement>(null);
+
+  const [opacity, setOpacity] = React.useState<number>(0);
+
+  React.useLayoutEffect(() => {
+    const sub$ = documentScroll$.subscribe(
+      ({ scrollTop, scrollHeight }): void => {
+        const bounding = ref.current?.getBoundingClientRect();
+
+        if (
+          bounding &&
+          bounding.top <= scrollTop &&
+          bounding.bottom <= window.innerHeight + scrollTop
+        ) {
+          ref.current?.classList.add('card-appear');
+          setOpacity(1);
+          sub$.unsubscribe();
+        }
+      }
+    );
+
+    return () => sub$.unsubscribe();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        display: 'flex',
+        height: '260px',
+        alignItems: 'center',
+        opacity: opacity,
+        width: '1092px',
+        marginTop: '16px',
+        justifyContent: reversed ? 'unset' : 'flex-end'
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
 const CommunityCards = (): JSX.Element => (
   <div
     style={{
@@ -89,41 +139,15 @@ const CommunityCards = (): JSX.Element => (
       padding: '130px 130px'
     }}
   >
-    <div
-      style={{
-        display: 'flex',
-        height: '260px',
-        alignItems: 'center',
-        width: '1092px',
-        marginTop: '16px',
-        justifyContent: 'flex-end'
-      }}
-    >
+    <CommunityLine>
       <CommunityCard {...Communities[0]} />
-    </div>
-    <div
-      style={{
-        display: 'flex',
-        height: '260px',
-        width: '1092px',
-        alignItems: 'center',
-        marginTop: '16px'
-      }}
-    >
+    </CommunityLine>
+    <CommunityLine reversed>
       <CommunityCard {...Communities[1]} />
-    </div>
-    <div
-      style={{
-        display: 'flex',
-        height: '260px',
-        width: '1092px',
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        marginTop: '16px'
-      }}
-    >
+    </CommunityLine>
+    <CommunityLine>
       <CommunityCard {...Communities[2]} />
-    </div>
+    </CommunityLine>
   </div>
 );
 

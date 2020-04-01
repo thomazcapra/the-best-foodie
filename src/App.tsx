@@ -1,7 +1,5 @@
 import { Footer, Navbar } from 'components';
 import React, { Component } from 'react';
-import { fromEvent, asyncScheduler } from 'rxjs';
-import { map, throttleTime } from 'rxjs/operators';
 import {
   About,
   Community,
@@ -10,6 +8,7 @@ import {
   Recipes,
   SectionsData
 } from 'sections';
+import { documentScroll$ } from 'utils';
 import './App.css';
 
 const RequestInfo = (): JSX.Element => {
@@ -66,14 +65,11 @@ const SectionNumbers = (): JSX.Element => {
   const [currentSection, setCurrentSection] = React.useState<number>(0);
 
   React.useEffect(() => {
-    const sub$ = fromEvent(document, 'scroll')
-      .pipe(
-        throttleTime(50, asyncScheduler, { leading: false, trailing: true }),
-        map((e: any) => e.target.scrollingElement as HTMLElement)
-      )
-      .subscribe(({ scrollTop, scrollHeight }): void => {
+    const sub$ = documentScroll$.subscribe(
+      ({ scrollTop, scrollHeight }): void => {
         setCurrentSection(getSectionIndex(scrollTop, scrollHeight));
-      });
+      }
+    );
 
     return () => sub$.unsubscribe();
   }, []);
