@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c04849a829e5e199e4a3aa04c7a731a",
+    "revision": "d90bc12ba19e263afcdfaebb32f3909f",
     "url": "/the-best-foodie/index.html"
   },
   {
-    "revision": "28e354281edeaea049f4",
-    "url": "/the-best-foodie/static/css/main.284fb52f.chunk.css"
+    "revision": "c773ccc983aee06ec225",
+    "url": "/the-best-foodie/static/css/main.488fb584.chunk.css"
   },
   {
-    "revision": "c5bccae4ccee3858b4f0",
-    "url": "/the-best-foodie/static/js/2.7d973b76.chunk.js"
+    "revision": "d3ee438b443f5846e935",
+    "url": "/the-best-foodie/static/js/2.a0227f5b.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/the-best-foodie/static/js/2.7d973b76.chunk.js.LICENSE.txt"
+    "url": "/the-best-foodie/static/js/2.a0227f5b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28e354281edeaea049f4",
-    "url": "/the-best-foodie/static/js/main.b5aba818.chunk.js"
+    "revision": "c773ccc983aee06ec225",
+    "url": "/the-best-foodie/static/js/main.ea2a4570.chunk.js"
   },
   {
     "revision": "650bd23842795e5d62b9",
