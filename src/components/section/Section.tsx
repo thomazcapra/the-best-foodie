@@ -10,8 +10,6 @@ interface SectionProps {
 }
 
 export const Section = ({
-  title,
-  subtitle,
   id,
   backgroundColor,
   height,
@@ -25,8 +23,6 @@ export const Section = ({
       }}
     >
       <div className='section-content' id={id}>
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
         {content}
       </div>
     </section>
