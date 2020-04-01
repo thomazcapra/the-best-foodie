@@ -3,6 +3,11 @@ import React from 'react';
 import community1 from './community_1.svg';
 import community2 from './community_2.svg';
 import community3 from './community_3.svg';
+
+import detail1 from './detail_1.png';
+import detail2 from './detail_2.png';
+import detail3 from './detail_3.png';
+
 import instagramBtn from './instagram-btn.svg';
 
 const commentIcon = (): JSX.Element => (
@@ -38,6 +43,9 @@ export const communityImages = {
   community1,
   community2,
   community3,
+  detail1,
+  detail2,
+  detail3,
   commentIcon,
   heartIcon,
   instagramBtn

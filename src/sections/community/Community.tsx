@@ -3,6 +3,7 @@ import React from 'react';
 import { SectionsData } from 'sections/sections.models';
 import { documentScroll$ } from 'utils';
 import { Communities } from './Community.data';
+import { communityImages } from 'assets/images/community';
 
 const CommunityTitle = (): JSX.Element => (
   <div
@@ -94,21 +95,19 @@ const CommunityLine = ({
   const [opacity, setOpacity] = React.useState<number>(0);
 
   React.useLayoutEffect(() => {
-    const sub$ = documentScroll$.subscribe(
-      ({ scrollTop, scrollHeight }): void => {
-        const bounding = ref.current?.getBoundingClientRect();
+    const sub$ = documentScroll$.subscribe(({ scrollTop }): void => {
+      const bounding = ref.current?.getBoundingClientRect();
 
-        if (
-          bounding &&
-          bounding.top <= scrollTop &&
-          bounding.bottom <= window.innerHeight + scrollTop
-        ) {
-          ref.current?.classList.add('card-appear');
-          setOpacity(1);
-          sub$.unsubscribe();
-        }
+      if (
+        bounding &&
+        bounding.top <= scrollTop &&
+        bounding.bottom <= window.innerHeight + scrollTop
+      ) {
+        ref.current?.classList.add('card-appear');
+        setOpacity(1);
+        sub$.unsubscribe();
       }
-    );
+    });
 
     return () => sub$.unsubscribe();
   }, []);
@@ -140,10 +139,17 @@ const CommunityCards = (): JSX.Element => (
     }}
   >
     <CommunityLine>
-      <CommunityCard {...Communities[0]} />
+      <React.Fragment>
+        <img src={communityImages.detail1} alt={communityImages.detail1} />
+        <img src={communityImages.detail2} alt={communityImages.detail2} />
+        <CommunityCard {...Communities[0]} />
+      </React.Fragment>
     </CommunityLine>
     <CommunityLine reversed>
-      <CommunityCard {...Communities[1]} />
+      <React.Fragment>
+        <img src={communityImages.detail3} alt={communityImages.detail3} />
+        <CommunityCard {...Communities[1]} />
+      </React.Fragment>
     </CommunityLine>
     <CommunityLine>
       <CommunityCard {...Communities[2]} />
