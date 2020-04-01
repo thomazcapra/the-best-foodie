@@ -1,6 +1,6 @@
+import { communityImages } from 'assets/images/community';
 import React from 'react';
 import { CommunityProps } from 'shared/models';
-import { communityImages } from 'assets/images/community';
 
 export const CommunityCard = ({
   image,
@@ -23,6 +23,7 @@ export const CommunityCard = ({
           height: '250px',
           margin: '0 12.5px',
           boxShadow: '0px 15px 50px #0000000F',
+          backgroundColor: 'white',
           justifyContent: 'center',
           display: 'flex',
           position: 'relative'
@@ -46,6 +47,7 @@ export const CommunityCard = ({
           height: '250px',
           boxShadow: '0px 15px 50px #0000000F',
           position: 'relative',
+          backgroundColor: 'white',
           margin: '0 12.5px'
         }}
       >
@@ -90,7 +92,6 @@ export const CommunityCard = ({
               style={{
                 display: 'flex',
                 fontSize: '14px',
-                width: '30px',
                 justifyContent: 'space-around'
               }}
             >
@@ -101,14 +102,19 @@ export const CommunityCard = ({
               >
                 <communityImages.commentIcon />
               </div>
-              <div> {comments}</div>
+              <div
+                style={{
+                  marginLeft: '5px'
+                }}
+              >
+                {comments}
+              </div>
             </div>
             <div
               style={{
                 display: 'flex',
                 fontSize: '14px',
                 marginLeft: '10px',
-                width: '45px',
                 justifyContent: 'space-around'
               }}
             >
@@ -119,7 +125,11 @@ export const CommunityCard = ({
               >
                 <communityImages.heartIcon />
               </div>
-              {`${hearts}K`}
+              <div
+                style={{
+                  marginLeft: '5px'
+                }}
+              >{`${hearts}K`}</div>
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
+import { communityImages } from 'assets/images/community';
 import { CommunityCard, Section } from 'components';
 import React from 'react';
 import { SectionsData } from 'sections/sections.models';
 import { documentScroll$ } from 'utils';
 import { Communities } from './Community.data';
-import { communityImages } from 'assets/images/community';
 
 const CommunityTitle = (): JSX.Element => (
   <div
@@ -117,10 +117,11 @@ const CommunityLine = ({
       ref={ref}
       style={{
         display: 'flex',
+        opacity,
         height: '260px',
         alignItems: 'center',
-        opacity: opacity,
         width: '1092px',
+        position: 'relative',
         marginTop: '16px',
         justifyContent: reversed ? 'unset' : 'flex-end'
       }}
@@ -140,19 +141,82 @@ const CommunityCards = (): JSX.Element => (
   >
     <CommunityLine>
       <React.Fragment>
-        <img src={communityImages.detail1} alt={communityImages.detail1} />
-        <img src={communityImages.detail2} alt={communityImages.detail2} />
+        <img
+          style={{
+            position: 'absolute',
+            bottom: '-16px'
+          }}
+          src={communityImages.detail1}
+          alt={communityImages.detail1}
+        />
+        <img
+          style={{
+            position: 'absolute',
+            bottom: '-30px',
+            right: '222px'
+          }}
+          src={communityImages.detail2}
+          alt={communityImages.detail2}
+        />
         <CommunityCard {...Communities[0]} />
       </React.Fragment>
     </CommunityLine>
     <CommunityLine reversed>
       <React.Fragment>
-        <img src={communityImages.detail3} alt={communityImages.detail3} />
+        <img
+          style={{
+            position: 'absolute',
+            bottom: '-30px',
+            left: '65px'
+          }}
+          src={communityImages.detail3}
+          alt={communityImages.detail3}
+        />
         <CommunityCard {...Communities[1]} />
+        <div
+          style={{
+            flexGrow: 1,
+            padding: '15px'
+          }}
+        >
+          <div
+            style={{
+              fontFamily: 'GillSans',
+              letterSpacing: '0.15px',
+              color: '#333333',
+              width: '202px'
+            }}
+          >
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore
+          </div>
+        </div>
       </React.Fragment>
     </CommunityLine>
     <CommunityLine>
-      <CommunityCard {...Communities[2]} />
+      <React.Fragment>
+        <div
+          style={{
+            flexGrow: 1,
+            padding: '15px'
+          }}
+        >
+          <div
+            style={{
+              fontFamily: 'GillSans',
+              letterSpacing: '0.15px',
+              color: '#333333',
+              width: '192px'
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+            aute irure.
+          </div>
+        </div>
+        <CommunityCard {...Communities[2]} />
+      </React.Fragment>
     </CommunityLine>
   </div>
 );
