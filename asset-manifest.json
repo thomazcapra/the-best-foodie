@@ -1,34 +1,35 @@
 {
   "files": {
-    "main.css": "/the-best-foodie/static/css/main.488fb584.chunk.css",
-    "main.js": "/the-best-foodie/static/js/main.ea2a4570.chunk.js",
-    "main.js.map": "/the-best-foodie/static/js/main.ea2a4570.chunk.js.map",
+    "main.css": "/the-best-foodie/static/css/main.045d62f3.chunk.css",
+    "main.js": "/the-best-foodie/static/js/main.98672519.chunk.js",
+    "main.js.map": "/the-best-foodie/static/js/main.98672519.chunk.js.map",
     "runtime-main.js": "/the-best-foodie/static/js/runtime-main.493c1921.js",
     "runtime-main.js.map": "/the-best-foodie/static/js/runtime-main.493c1921.js.map",
-    "static/js/2.a0227f5b.chunk.js": "/the-best-foodie/static/js/2.a0227f5b.chunk.js",
-    "static/js/2.a0227f5b.chunk.js.map": "/the-best-foodie/static/js/2.a0227f5b.chunk.js.map",
+    "static/js/2.0e23b272.chunk.js": "/the-best-foodie/static/js/2.0e23b272.chunk.js",
+    "static/js/2.0e23b272.chunk.js.map": "/the-best-foodie/static/js/2.0e23b272.chunk.js.map",
     "index.html": "/the-best-foodie/index.html",
-    "precache-manifest.4d12933a88e22b5ffc6599099e1cef50.js": "/the-best-foodie/precache-manifest.4d12933a88e22b5ffc6599099e1cef50.js",
+    "precache-manifest.657e21512eaf89037e94592990cdec5a.js": "/the-best-foodie/precache-manifest.657e21512eaf89037e94592990cdec5a.js",
     "service-worker.js": "/the-best-foodie/service-worker.js",
-    "static/css/main.488fb584.chunk.css.map": "/the-best-foodie/static/css/main.488fb584.chunk.css.map",
-    "static/js/2.a0227f5b.chunk.js.LICENSE.txt": "/the-best-foodie/static/js/2.a0227f5b.chunk.js.LICENSE.txt",
+    "static/css/main.045d62f3.chunk.css.map": "/the-best-foodie/static/css/main.045d62f3.chunk.css.map",
+    "static/js/2.0e23b272.chunk.js.LICENSE.txt": "/the-best-foodie/static/js/2.0e23b272.chunk.js.LICENSE.txt",
     "static/media/index.css": "/the-best-foodie/static/media/GillSans.b7394eb3.ttc",
     "static/media/background.png": "/the-best-foodie/static/media/background.c054d54f.png",
     "static/media/community_1.svg": "/the-best-foodie/static/media/community_1.05b6c6f9.svg",
     "static/media/community_2.svg": "/the-best-foodie/static/media/community_2.3aef7e89.svg",
     "static/media/community_3.svg": "/the-best-foodie/static/media/community_3.eefad4f9.svg",
+    "static/media/detail_3.png": "/the-best-foodie/static/media/detail_3.16c39d40.png",
     "static/media/go-btn.svg": "/the-best-foodie/static/media/go-btn.c64dc94d.svg",
     "static/media/instagram-btn.svg": "/the-best-foodie/static/media/instagram-btn.45e2d791.svg",
     "static/media/recipe_1.svg": "/the-best-foodie/static/media/recipe_1.57f170ce.svg",
     "static/media/recipe_2.svg": "/the-best-foodie/static/media/recipe_2.5fba1a9c.svg",
     "static/media/recipe_4.svg": "/the-best-foodie/static/media/recipe_4.9e5a5ec8.svg",
     "static/media/recipe_5.svg": "/the-best-foodie/static/media/recipe_5.571046ce.svg",
-    "static/media/stamp.svg": "/the-best-foodie/static/media/stamp.d897199e.svg"
+    "static/media/stamp.svg": "/the-best-foodie/static/media/stamp.300e9a1e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.493c1921.js",
-    "static/js/2.a0227f5b.chunk.js",
-    "static/css/main.488fb584.chunk.css",
-    "static/js/main.ea2a4570.chunk.js"
+    "static/js/2.0e23b272.chunk.js",
+    "static/css/main.045d62f3.chunk.css",
+    "static/js/main.98672519.chunk.js"
   ]
 }
