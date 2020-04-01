@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf63dd76dda381a6a91beb1c405a520c",
+    "revision": "d888aab1ac31ad03e9e1f87f9cf2ce12",
     "url": "/the-best-foodie/index.html"
   },
   {
-    "revision": "010296c64ac5a4155a95",
-    "url": "/the-best-foodie/static/css/main.d7296f3a.chunk.css"
+    "revision": "364dd92200eaace89125",
+    "url": "/the-best-foodie/static/css/main.284fb52f.chunk.css"
   },
   {
-    "revision": "812b830a949adef6ae5e",
-    "url": "/the-best-foodie/static/js/2.20a4c4fe.chunk.js"
+    "revision": "e16827233f569583e657",
+    "url": "/the-best-foodie/static/js/2.54b8b0a7.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/the-best-foodie/static/js/2.20a4c4fe.chunk.js.LICENSE.txt"
+    "url": "/the-best-foodie/static/js/2.54b8b0a7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "010296c64ac5a4155a95",
-    "url": "/the-best-foodie/static/js/main.3df7b74e.chunk.js"
+    "revision": "364dd92200eaace89125",
+    "url": "/the-best-foodie/static/js/main.3aeb569f.chunk.js"
   },
   {
     "revision": "650bd23842795e5d62b9",
@@ -36,8 +36,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-best-foodie/static/media/background.c054d54f.png"
   },
   {
+    "revision": "05b6c6f9fe8b238dcbafffc2a2313f7d",
+    "url": "/the-best-foodie/static/media/community_1.05b6c6f9.svg"
+  },
+  {
+    "revision": "3aef7e89655404e0a938950efdfbff30",
+    "url": "/the-best-foodie/static/media/community_2.3aef7e89.svg"
+  },
+  {
+    "revision": "eefad4f9b85a63eccbc71b6ac503a312",
+    "url": "/the-best-foodie/static/media/community_3.eefad4f9.svg"
+  },
+  {
     "revision": "c64dc94d0eed896156c14deeb955bacf",
     "url": "/the-best-foodie/static/media/go-btn.c64dc94d.svg"
+  },
+  {
+    "revision": "45e2d7913bc0bf6ce538b97f1a3a43a5",
+    "url": "/the-best-foodie/static/media/instagram-btn.45e2d791.svg"
   },
   {
     "revision": "57f170ce66920fdb996e59dd53db2d46",
@@ -56,7 +72,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-best-foodie/static/media/recipe_5.571046ce.svg"
   },
   {
-    "revision": "300e9a1e5fb7aa1a726e1c83b16c9b23",
-    "url": "/the-best-foodie/static/media/stamp.300e9a1e.svg"
+    "revision": "d897199ef4cc81e4deef502e7caaab62",
+    "url": "/the-best-foodie/static/media/stamp.d897199e.svg"
   }
 ]);
