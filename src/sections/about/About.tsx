@@ -26,7 +26,6 @@ export const About = (): JSX.Element => (
             position: 'absolute',
             display: 'flex',
             justifyContent: 'center'
-            // alignItems: 'center'
           }}
         >
           <div

@@ -1,41 +1,127 @@
 import React from 'react';
 import { CommunityProps } from 'shared/models';
+import { communityImages } from 'assets/images/community';
 
 export const CommunityCard = ({
   image,
   title,
   message,
   comments,
-  hearts
+  hearts,
+  reversed
 }: CommunityProps): JSX.Element => {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: reversed ? 'row-reverse' : 'row'
+      }}
+    >
       <div
         style={{
-          display: 'flex'
+          width: '250px',
+          height: '250px',
+          margin: '0 12.5px',
+          boxShadow: '0px 15px 50px #0000000F',
+          justifyContent: 'center',
+          display: 'flex',
+          position: 'relative'
+        }}
+      >
+        <img
+          style={{
+            position: 'absolute',
+            cursor: 'pointer',
+            right: 0
+          }}
+          src={communityImages.instagramBtn}
+          alt={communityImages.instagramBtn}
+        />
+        <img style={{ width: '222px' }} src={image} alt={image} />
+      </div>
+
+      <div
+        style={{
+          width: '250px',
+          height: '250px',
+          boxShadow: '0px 15px 50px #0000000F',
+          position: 'relative',
+          margin: '0 12.5px'
         }}
       >
         <div
           style={{
-            width: '250px',
-            height: '250px',
-            margin: '0 12.5px'
+            padding: '39px 30px 13.8px 30px'
           }}
         >
-          <img src={image} alt={image} />
-        </div>
-
-        <div
-          style={{
-            width: '250px',
-            height: '250px',
-            margin: '0 12.5px'
-          }}
-        >
-          <div>{title}</div>
-          <div>{message}</div>
-          <div>{comments}</div>
-          <div>{hearts}</div>
+          <div
+            style={{
+              color: '#333333',
+              fontSize: '22px',
+              marginBottom: '16px',
+              letterSpacing: '0.44px'
+            }}
+          >
+            {title}
+          </div>
+          <div
+            style={{
+              fontFamily: 'GillSans',
+              color: '#333333',
+              fontSize: '15px',
+              lineHeight: '20px',
+              letterSpacing: '0.15px'
+            }}
+          >
+            {message}
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+              alignItems: 'flex-end',
+              height: '35px',
+              position: 'absolute',
+              right: '30.2px',
+              bottom: '15.8px'
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                fontSize: '14px',
+                width: '30px',
+                justifyContent: 'space-around'
+              }}
+            >
+              <div
+                style={{
+                  cursor: 'pointer'
+                }}
+              >
+                <communityImages.commentIcon />
+              </div>
+              <div> {comments}</div>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                fontSize: '14px',
+                marginLeft: '10px',
+                width: '45px',
+                justifyContent: 'space-around'
+              }}
+            >
+              <div
+                style={{
+                  cursor: 'pointer'
+                }}
+              >
+                <communityImages.heartIcon />
+              </div>
+              {`${hearts}K`}
+            </div>
+          </div>
         </div>
       </div>
     </div>

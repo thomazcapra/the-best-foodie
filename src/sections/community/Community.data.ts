@@ -16,6 +16,7 @@ export const Communities: CommunityProps[] = [
     message:
       'IWaffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood',
     comments: 789,
+    reversed: true,
     hearts: 99.7
   },
   {

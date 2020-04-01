@@ -14,4 +14,5 @@ export interface CommunityProps {
   message: string;
   comments: number;
   hearts: number;
+  reversed?: boolean;
 }

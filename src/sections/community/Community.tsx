@@ -1,16 +1,15 @@
+import { CommunityCard, Section } from 'components';
 import React from 'react';
-import { Section, CommunityCard } from 'components';
 import { SectionsData } from 'sections/sections.models';
 import { Communities } from './Community.data';
-
-const Slide = require('react-reveal/Slide');
 
 const CommunityTitle = (): JSX.Element => (
   <div
     style={{
       marginLeft: '418px',
       marginTop: '79px',
-      width: '266px'
+      width: '266px',
+      position: 'absolute'
     }}
   >
     <div
@@ -71,6 +70,7 @@ const CommunityTitle = (): JSX.Element => (
           fontSize: '22px',
           lineHeight: '25px',
           letterSpacing: '0.44px',
+          width: '199px',
           marginTop: '36px'
         }}
       >
@@ -85,45 +85,45 @@ const CommunityCards = (): JSX.Element => (
   <div
     style={{
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      padding: '130px 130px'
     }}
   >
-    <Slide
-      bottom
+    <div
       style={{
         display: 'flex',
-        border: '1px solid',
         height: '260px',
-        padding: '10px 146px',
-        marginTop: '16px'
+        alignItems: 'center',
+        width: '1092px',
+        marginTop: '16px',
+        justifyContent: 'flex-end'
       }}
     >
       <CommunityCard {...Communities[0]} />
-    </Slide>
-    <Slide
-      bottom
+    </div>
+    <div
       style={{
         display: 'flex',
-        border: '1px solid',
         height: '260px',
-        padding: '10px 146px',
+        width: '1092px',
+        alignItems: 'center',
         marginTop: '16px'
       }}
     >
       <CommunityCard {...Communities[1]} />
-    </Slide>
-    <Slide
-      bottom
+    </div>
+    <div
       style={{
         display: 'flex',
-        border: '1px solid',
         height: '260px',
-        padding: '10px 146px',
+        width: '1092px',
+        alignItems: 'center',
+        justifyContent: 'flex-end',
         marginTop: '16px'
       }}
     >
       <CommunityCard {...Communities[2]} />
-    </Slide>
+    </div>
   </div>
 );
 
